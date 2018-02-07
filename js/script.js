@@ -16,12 +16,6 @@
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 // Songs
-var mySong = {
-	"title":"24K Magic",
-	"artist":"Bruno Mars",
-	"mp3-url":"https://open.spotify.com/track/6b8Be6ljOzmkOmFslEb23P",
-	"image-url":"https://images-na.ssl-images-amazon.com/images/I/71Gr9aCHQfL._SY355_.jpg",
-}
 
 var myPlayList = [
 	{
@@ -41,34 +35,44 @@ var myPlayList = [
 		"artist":"Justin Bieber",
 		"mp3-url":"https://open.spotify.com/track/09CtPGIpYB4BrO8qb1RGsF",
 		"image-url":"http://assets-s3.usmagazine.com/uploads/assets/articles/93827-justin-biebers-sorry-choreographer-spills-video-style-secrets-parris-goebel/1445638548_justin-bieber-sorry-dancers-zoom.jpg",
+	},
+	{
+		"title":"Finesse",
+		"artist":"Bruno Mars",
+		"mp3-url":"https://open.spotify.com/search/results/bruno%20mars",
+		"image-url":"https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Bruno_Mars_%26_Cardi_B_-_Finesse.png/220px-Bruno_Mars_%26_Cardi_B_-_Finesse.png"
 	}
-
-]
+];
 
 
 
 // DOCUMENT READY FUNCTION
 $( document ).ready(function() {
   
+var title = myPlayList[0].title;
+var artist = myPlayList[0].artist;
+var mp3 = myPlayList[0][2];
+var image = myPlayList[0][3];
 
+var display = "<p>" + title + " <br> " + artist + " <br> " + mp3 + " <br> " + image + "</p>";
+
+var song = display;
+$(".songs").html(song);
 
 
 });
 
+
+
+
+
+
 function displayList(){
-
-
-  
 }
 
+
 function clearList(){
-  
-  
-  
 }
 
 function addSong(){
- 
-  
-  
 }
