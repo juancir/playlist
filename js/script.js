@@ -54,10 +54,19 @@ var artist = myPlayList[0].artist;
 var mp3 = myPlayList[0][2];
 var image = myPlayList[0][3];
 
-var display = "<p>" + title + " <br> " + artist + " <br> " + mp3 + " <br> " + image + "</p>";
+
+var display = "<p>" + title + " <br> " + artist + " <br> <a href=" + mp3 + ">Song Here</a> <br> <img src= " + image + "></p>";
+
+var title = myPlayList[1].title;
+var artist = myPlayList[1].artist;
+var mp3 = myPlayList[1][2];
+var image = myPlayList[1][3];
+
+// var display = "<p>" + title + " <br> " + artist + " <br> <a href=" + mp3 + ">Song Here</a> <br> <img src= " + image + "></p>";
+
 
 var song = display;
-$(".songs").html(song);
+$(".song1").html(song);
 
 
 });

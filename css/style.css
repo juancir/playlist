@@ -1,1 +1,19 @@
-
+h1{
+    text-align: center;
+}
+.songList{
+    width: 300px;
+    background-color: grey;
+    height: 550px;
+    margin-left: 1058px;
+    margin-top: -520px;
+}
+h2{
+    text-align: center;
+}
+.currentSong{
+    height: 500px;
+    width: 500px;
+    background-color: grey;
+    margin-left: 300px
+}
