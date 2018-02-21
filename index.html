@@ -18,22 +18,42 @@
   </head>
 
   <body>
+    
+<div class="row add-song">
+        <div class="col">
+          <h2 class="text-center">Add Song</h2>
+          <div class="form-group">
+            <label for="title">Title: </label>
+            <input type="text" class="form-control" id="title">
+          </div>
+          <div class="form-group">
+            <label for="artist">Artist: </label>
+            <input type="text" class="form-control" id="artist">
+          </div>
+          <div class="form-group">
+            <label for="play-link">link: </label>
+            <input type="text" class="form-control" id="play-link">
+          </div>
+          <div class="form-group">
+            <label for="album-image">Image: </label>
+            <input type="text" class="form-control" id="album-image">
+          </div>
+          <button class="btn btn-success btn-block" id="submit"> Submit </button>
+        </div>
+      </div>
+    
+    <!---->
     <div class="container text-center">
       <h1> My Playlist </h1>
-      <!--<input>-->
-      <!--<input>-->
-      <!--<input>-->
-      <!--<input>-->
-      <!--<button> Add Song </button>-->
       <div class="currentSong">
-        
-      </div>
+        <div id="currentImage"></div>
+        </div>
+      <!---->
       <div class="songList">
         <h2>All Songs</h2>
-        <div class="song1"></div>
-        <div class="song2"></div>
+        <div class="list">
+        </div>
       </div>  
-      
     </div>
   </body>
 

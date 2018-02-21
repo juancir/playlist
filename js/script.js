@@ -1,21 +1,4 @@
-// quick fix for Cloud9 warning:
-/* global $ */
 
-// Class 2:
-// Complete displayList() to show a single song in the list
-
-// Class 2:
-// Complete displayList() to show all the songs in the list
-// Complete clearList() funcion
-
-// Class 3:
-// Complete the addSong function to take an input from input boxes and push a new song to the playlist array. 
-
-// *************************** YOUR CODE BELOW *******************************
-//******************TEST EARLY AND OFTEN USING console.log() ******************
-//****************** SERIOUSLY TEST USING console.log()!!! ******************
-
-// Songs
 
 var myPlayList = [
 	{
@@ -49,21 +32,15 @@ var myPlayList = [
 // DOCUMENT READY FUNCTION
 $( document ).ready(function() {
   
-var title = myPlayList[0].title;
-var artist = myPlayList[0].artist;
-var mp3 = myPlayList[0][2];
-var image = myPlayList[0][3];
-
-
-var display = "<p>" + title + " <br> " + artist + " <br> <a href=" + mp3 + ">Song Here</a> <br> <img src= " + image + "></p>";
-
-var title = myPlayList[1].title;
-var artist = myPlayList[1].artist;
-var mp3 = myPlayList[1][2];
-var image = myPlayList[1][3];
-
-// var display = "<p>" + title + " <br> " + artist + " <br> <a href=" + mp3 + ">Song Here</a> <br> <img src= " + image + "></p>";
-
+ $( document ).ready(function() {
+     for(var i = 0; i < myPlayList.length; i++) { 
+		 $('.list').append("<hr>");
+         $('.list').append("<h3>" + myPlayList[i].title + "</h3>");
+         $('.list').append("<p>Artist: " + myPlayList[i].artist + "</p>");
+         $('.list').append("<a href=" + myPlayList[i]["mp3-url"] + ">URL</a>");
+         $('.list').append("<img src = " + myPlayList[i]["image-url"] + ">");
+   	} 
+});
 
 var song = display;
 $(".song1").html(song);
@@ -84,4 +61,14 @@ function clearList(){
 }
 
 function addSong(){
+	$("#submit").click(function() {
+    var title = $("#title").val();
+    var url = $("#url").val();
+    var newSong = {
+        "title": title,
+	    "url": url,
+    };
+    console.log(newSong);
+});
 }
+
