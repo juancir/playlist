@@ -42,16 +42,6 @@ $( document ).ready(function() {
    	} 
 });
 
-var song = display;
-$(".song1").html(song);
-
-
-});
-
-
-
-
-
 
 function displayList(){
 }
@@ -60,15 +50,6 @@ function displayList(){
 function clearList(){
 }
 
-function addSong(){
-	$("#submit").click(function() {
-    var title = $("#title").val();
-    var url = $("#url").val();
-    var newSong = {
-        "title": title,
-	    "url": url,
-    };
-    console.log(newSong);
-});
+	function addSong(){ 
 }
-
+});
