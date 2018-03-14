@@ -1,24 +1,13 @@
-h1{
-    text-align: center;
-    margin-top: -610px;
-}
 .songList{
-    width: 300px;
-    /*background-color: grey;*/
+    width: 800px;
     height: 550px;
-    margin-left: 1058px;
-    margin-top: -520px;
+    margin-left: 300px;
+    margin-top: -600px;
 }
 h2{
     text-align: center;
     margin-top: 20px;
-}
-.currentSong{
-    height: 500px;
-    width: 500px;
-    background-color: grey;
-    margin-left: 425px;
-    margin-top:50px;
+    color: red;
 }
 #listImage{
    height:50px; 
@@ -26,23 +15,24 @@ h2{
     
 }
 .currentImage{
-    /*background-color: black;*/
     height: 250px;
     width: 250px;
     margin-left: 125px;
     margin-top: -40px;
 }
 .add-song{
-    /*background-color: grey;*/
     height: 550px;
     width: 300px;
     margin-top: 60px;
+    color: red;
 }
 .form-group{
     padding: 20px;
+    color: red;
 }
 button{
     margin-left: 20px;
+    color: red;
 }
 .list{
     padding: 10px;
@@ -53,4 +43,27 @@ input{
 }
 .currentLink{
     margin-bottom:-175px;
+}
+h3{
+    margin-left: 200px;
+    margin-top: -20px;
+    color: red;
+}
+p{
+    margin-left: 200px;
+    margin-top: -10px;
+    color: red;
+}
+a{
+    margin-left: 200px;
+    margin-top: -20px;
+    color: red;
+}
+#listImage{
+    margin-bottom: -55px;
+    height: 100px;
+    width: 100px;
+}
+body{
+    background-color: black;
 }

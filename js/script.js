@@ -29,16 +29,21 @@ $(document).ready(function() {
 		$('.list').html("");
 		for (var i = 0; i < myPlayList.length; i++) {
 			$('.list').append("<hr>");
+			$('.list').append("<img id='listImage' src = " + myPlayList[i]["image-url"] + ">");
 			$('.list').append("<h3>" + myPlayList[i].title + "</h3>");
 			$('.list').append("<p>Artist: " + myPlayList[i].artist + "</p>");
 			$('.list').append("<a href=" + myPlayList[i]["mp3-url"] + ">URL</a>");
-			$('.list').append("<img id='listImage' src = " + myPlayList[i]["image-url"] + ">");
+			$('.list').append("<br>");
 		}
+	}
+	
+	function mainSong(){
 		$('.currentSong').append("<img class='currentImage' src = " + myPlayList[0]["image-url"] + ">");
 	    $('.currentSong').append("<a class='currentLink' href=" + myPlayList[0]["mp3-url"] + ">Listen Here</a>");
 	}
+	
 	displayList();
-
+	mainSong();
 
 	function clearList() {
 		myPlayList = [];
